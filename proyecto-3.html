@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>inti (inkaverse) | victorhugo.com</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img src="assets/avatar.png" alt="Logo" class="brand-logo" />
+        <span>victorhugo.com</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="blog.html">Blog</a>
+        <a href="projects.html" class="active">Project</a>
+        <a href="research.html">Research</a>
+        <a href="field-notes.html">Field Notes</a>
+        <a href="about.html">About</a>
+
+        <div class="nav-icons">
+          <span class="separator"></span>
+
+          <a href="https://github.com/Vyxugo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/vyxugo_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="mailto:victorhugobalderachaponan@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <article class="project-full">
+
+      <h1>inti <span style="font-size: 26px; color: var(--muted);">(inkaverse)</span></h1>
+
+      <div class="post-meta">
+        <span>
+          <i class="fa-solid fa-user"></i>
+          Flavio Lozano-Isla
+        </span>
+
+        <span>
+          <i class="fa-regular fa-calendar"></i>
+          2026
+        </span>
+
+        <span>
+          included in
+          <i class="fa-regular fa-folder"></i>
+          projects
+        </span>
+      </div>
+
+      <!-- TODO: reemplaza por una captura real de las apps Tarpuy/Yupana -->
+      <img src="https://inkaverse.com/img/inkaverse.png" alt="inti - inkaverse">
+
+      <h2>🎯 Objetivo</h2>
+      <p>
+        <strong>inti</strong> es el paquete de R central del proyecto
+        <strong>inkaverse</strong>, un conjunto de herramientas y flujos de
+        trabajo para ciencias de plantas: diseño experimental, análisis de
+        datos y redacción científica. Es la base sobre la que construimos
+        Huito y tocapu para el etiquetado, y lo uso en mi día a día de
+        investigación para pasar de la planificación en campo a resultados
+        analizados sin cambiar de herramienta.
+      </p>
+
+      <h2>🛠️ Herramientas</h2>
+      <ul>
+        <li>R (paquete disponible en CRAN)</li>
+        <li>Shiny — apps Tarpuy y Yupana</li>
+        <li>pak / GitHub para versiones de desarrollo</li>
+      </ul>
+
+      <h2>⚙️ Instalación</h2>
+      <p>
+        Versión estable desde CRAN:
+      </p>
+      <pre><code>install.packages("inti")</code></pre>
+
+      <p>
+        Versión de desarrollo desde GitHub, usando <code>pak</code>:
+      </p>
+      <pre><code>if (!requireNamespace("pak", quietly = TRUE)) {
+  install.packages("pak")
+}
+
+pak::pkg_install("flavjack/inti")</code></pre>
+
+      <h2>📌 Las dos apps de Shiny</h2>
+      <p>
+        <strong>Tarpuy</strong> es la plataforma para planificar experimentos,
+        generar el fieldbook, organizar tratamientos y gestionar la colecta
+        de datos:
+      </p>
+      <pre><code>inti:::tarpuy_full()</code></pre>
+
+      <p>
+        <strong>Yupana</strong> es el entorno para el análisis estadístico y
+        la visualización de los datos experimentales:
+      </p>
+      <pre><code>inti:::yupana_full()</code></pre>
+
+      <p>
+        Ambas se pueden abrir desde el menú de Addins de RStudio o
+        directamente desde la consola de R.
+      </p>
+
+      <h2>✅ Resultado</h2>
+      <p>
+        Un flujo continuo que va desde el diseño del experimento y la
+        colecta de datos en campo (Tarpuy), pasando por el análisis
+        estadístico (Yupana), hasta la preparación de resultados para
+        publicación — todo dentro del mismo ecosistema de R.
+      </p>
+
+      <div class="project-links">
+        <a href="https://cloud.r-project.org/package=inti" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-cube"></i> Ver en CRAN
+        </a>
+        <a href="https://github.com/Flavjack/inti/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> Ver código
+        </a>
+        <a href="https://github.com/Flavjack/inti/issues" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-bug"></i> Reportar un bug
+        </a>
+        <a href="https://inkaverse.com/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-globe"></i> inkaverse.com
+        </a>
+      </div>
+
+      <p style="font-size: 14px; margin-top: -8px;">
+        Desarrollado por
+        <a href="https://www.linkedin.com/in/flozanoisla/" target="_blank" rel="noopener noreferrer">Flavio Lozano-Isla</a>,
+        Yoel Diaz-Saucedo y María Belén Kistner. Licencia GPL-3.
+      </p>
+
+      <a href="projects.html" class="read-more">
+        ← Back to Projects
+      </a>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Powered by Hugo | Theme -  LoveIt</p>
+    <p>&copy; 2026&ndash;<i class="fa-solid fa-infinity"></i> | Victor Hugo | Agronomist <3 </p>
+    </div>
+  </footer>
+</body>
+</html>

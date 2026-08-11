@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tocapu | victorhugo.com</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img src="assets/avatar.png" alt="Logo" class="brand-logo" />
+        <span>victorhugo.com</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="blog.html">Blog</a>
+        <a href="projects.html" class="active">Project</a>
+        <a href="research.html">Research</a>
+        <a href="field-notes.html">Field Notes</a>
+        <a href="about.html">About</a>
+
+        <div class="nav-icons">
+          <span class="separator"></span>
+
+          <a href="https://github.com/Vyxugo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/vyxugo_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="mailto:victorhugobalderachaponan@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <article class="project-full">
+
+      <h1>tocapu 🔶</h1>
+
+      <div class="post-meta">
+        <span>
+          <i class="fa-solid fa-user"></i>
+          Victor Hugo and Flavio Lozano-Isla
+        </span>
+
+        <span>
+          <i class="fa-regular fa-calendar"></i>
+          2026
+        </span>
+
+        <span>
+          included in
+          <i class="fa-regular fa-folder"></i>
+          projects
+        </span>
+      </div>
+
+      <!-- TODO: el link actual es un thumbnail temporal de Google Images y
+      puede dejar de funcionar en cualquier momento. Reemplázalo por una
+      captura real de la interfaz de Tocapu subida a assets/ -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQ_MvY1S5aaMLWVg-GLsI9CGXiP5nsegErWeCB-cBV47dl4bdmAjFXk8&s=10" alt="tocapu">
+
+      <h2>🎯 Objetivo</h2>
+      <p>
+        La calidad de un dato empieza desde el momento en que se colecta, y
+        ese paso suele quedar subestimado. Etiquetas bien diseñadas ayudan a
+        reducir errores en la colecta y a agilizar el análisis posterior.
+        <strong>tocapu</strong> es la interfaz que desarrollamos a partir del
+        paquete Huito para llevar ese diseño de etiquetas a una app más
+        accesible, sin necesidad de escribir código directamente.
+      </p>
+
+      <h2>🛠️ Herramientas</h2>
+      <ul>
+        <li>R (Shiny)</li>
+        <li>Paquete Huito</li>
+        <li>Integración con Google Sheets y archivos Excel (.xlsx)</li>
+        <li>Exportación de diseño en formato .json</li>
+      </ul>
+
+      <h2>📌 Solución</h2>
+      <p>
+        tocapu permite crear etiquetas reproducibles y personalizadas: cada
+        elemento se agrega como una capa, siguiendo un orden jerárquico
+        definido en el diseño. El usuario puede conectar su propio fieldbook
+        desde una hoja de Google Sheets o subir un Excel, definir el layout
+        de la etiqueta en la pestaña de Diseño, y exportarlo como .json para
+        poder restaurarlo más adelante.
+      </p>
+
+      <h2>🌀 ¿Qué es un tocapu?</h2>
+      <p>
+        Los tocapus son motivos geométricos usados en la tradición textil y
+        visual andina, organizados como unidades estructuradas que podían
+        identificar estatus, linaje, territorio o significados simbólicos
+        según el contexto. En esta app tomamos ese concepto como enfoque
+        visual y modular para construir etiquetas: cada componente se agrega
+        por capas, en un orden claro, hasta formar un diseño reproducible.
+        Así el nombre del proyecto integra una dimensión cultural andina
+        dentro del desarrollo tecnológico.
+      </p>
+
+      <h2>💡 Recomendaciones de uso</h2>
+      <ul>
+        <li>Crea un respaldo antes de hacer cambios grandes.</li>
+        <li>Usa un fieldbook por proyecto para mantener todo organizado.</li>
+        <li>Define primero el layout de la etiqueta para evitar cambios innecesarios después.</li>
+        <li>Exporta tu diseño (.json) desde la pestaña de Diseño para poder restaurarlo luego.</li>
+      </ul>
+
+      <h2>✅ Resultado</h2>
+      <p>
+        Una app que baja la barrera de entrada de Huito: cualquiera con un
+        fieldbook en Google Sheets o Excel puede diseñar y exportar
+        etiquetas reproducibles con código QR, sin tocar una línea de R.
+      </p>
+
+      <div class="project-links">
+        <!-- TODO: agrega el link real del repo de tocapu y/o de la app en vivo -->
+        <a href="https://github.com/Vyxugo" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> Ver código
+        </a>
+        <a href="https://github.com/flavjack/huito" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-book"></i> Huito (paquete base)
+        </a>
+      </div>
+
+      <a href="projects.html" class="read-more">
+        ← Back to Projects
+      </a>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Powered by Hugo | Theme -  LoveIt</p>
+    <p>&copy; 2026&ndash;<i class="fa-solid fa-infinity"></i> | Victor Hugo | Agronomist <3 </p>
+    </div>
+  </footer>
+</body>
+</html>

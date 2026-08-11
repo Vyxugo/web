@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>huito| vyxugo.com</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img src="assets/avatar.png" alt="Logo" class="brand-logo" />
+        <span>vyxugo.com</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="blog.html">Blog</a>
+        <a href="projects.html" class="active">Project</a>
+        <a href="research.html">Research</a>
+        <a href="field-notes.html">Field Notes</a>
+        <a href="about.html">About</a>
+
+        <div class="nav-icons">
+          <span class="separator"></span>
+
+          <a href="https://github.com/Vyxugo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/vyxugo_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="mailto:victorhugobalderachaponan@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="project-page">
+    <article class="project-full">
+
+
+      <h1>huito</h1>
+
+      <div class="post-meta">
+        <span>
+          <i class="fa-solid fa-user"></i>
+          Victor Hugo and Flavio Lozano-Isla
+        </span>
+
+        <span>
+          <i class="fa-regular fa-calendar"></i>
+          2026
+        </span>
+
+        <span>
+          included in
+          <i class="fa-regular fa-folder"></i>
+          projects
+        </span>
+      </div>
+
+      <!-- TODO: reemplaza por una captura o imagen real del proyecto -->
+      <img src="https://huito.inkaverse.com/articles/huito/img_0.jpg" alt="huito">
+
+           <h2>🎯 Objetivo</h2>
+      <p>
+        La calidad de un dato empieza en el momento en que se colecta, y ese
+        paso muchas veces se descuida. Uso <strong>Huito</strong>, un paquete
+        de R de código abierto, para diseñar etiquetas reproducibles con
+        códigos QR que reducen el error humano en la colecta de datos y
+        agilizan el análisis posterior. El nombre viene del huito
+        (<em>Genipa americana</em>), un fruto amazónico usado tradicionalmente
+        por su tinte para telas y pintura corporal.
+      </p>
+ 
+      <h2>🛠️ Herramientas</h2>
+      <ul>
+        <li>R</li>
+        <li>Paquete Huito (diseño de etiquetas por capas)</li>
+        <li>Códigos QR para trazabilidad</li>
+      </ul>
+ 
+      <h2>📌 Casos de uso</h2>
+      <p>
+        Las etiquetas que genera Huito integran códigos QR con la información
+        clave del material biológico, lo que permite darle seguimiento en
+        distintas etapas de un experimento: identificación de plantas en
+        campo o invernadero, etiquetado de órganos cosechados, y trazabilidad
+        de muestras en poscosecha y laboratorio. Cada etiqueta se arma por
+        capas en el código, respetando una jerarquía, lo que la hace fácil de
+        personalizar según lo que necesite cada proyecto.
+      </p>
+ 
+      <h2>✅ Resultado</h2>
+      <p>
+        Un flujo de etiquetado reproducible y personalizable que, en mi
+        experiencia, ayuda a que la colecta de datos en campo sea más
+        confiable desde el primer paso, con QR que permiten registrar
+        información directamente desde el celular.
+      </p>
+ 
+      <div class="project-links">
+        <a href="https://github.com/flavjack/huito" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i> Ver código
+        </a>
+        <a href="https://huito.inkaverse.com/articles/huito.html" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-book"></i> Documentación
+        </a>
+      </div>
+ 
+      <p style="font-size: 14px; margin-top: -8px;">
+        Paquete desarrollado por
+        <a href="https://lozanoisla.com/" target="_blank" rel="noopener noreferrer">Flavio Lozano-Isla</a>.
+      </p>
+ 
+      <a href="projects.html" class="read-more">
+        ← Back to Projects
+      </a>
+ 
+    </article>
+  </main>
+ 
+  <script src="script.js"></script>
+</body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Powered by Hugo | Theme -  LoveIt</p>
+    <p>&copy; 2026&ndash;<i class="fa-solid fa-infinity"></i> | Victor Hugo | Agronomist <3 </p>
+    </div>
+  </footer>
+</body>
+</html>

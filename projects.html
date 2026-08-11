@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos | vyxugo.com</title>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <img src="assets/avatar.png" alt="Logo" class="brand-logo" />
+        <span>vyxugo.com</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="blog.html">Blog</a>
+        <a href="projects.html" class="active">Project</a>
+        <a href="research.html">Research</a>
+        <a href="field-notes.html">Field Notes</a>
+        <a href="about.html">About</a>
+
+        <div class="nav-icons">
+          <span class="separator"></span>
+
+          <a href="https://github.com/Vyxugo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.instagram.com/vyxugo_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="mailto:victorhugobalderachaponan@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+          <button class="theme-btn" id="themeBtn" aria-label="Cambiar tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="projects-page">
+
+    <section class="blog-hero">
+      <h1>Proyectos</h1>
+      <p>Herramientas, análisis y experimentos donde cruzo agronomía con programación y datos.</p>
+    </section>
+
+
+    <div class="projects-grid">
+
+      <a href="proyecto-1.html" class="project-card">
+        <img src="https://huito.inkaverse.com/articles/huito/img_0.jpg" alt="Huito">
+        <div class="project-card-content">
+          <h3>Huito 🏷️</h3>
+          <p>Diseño de etiquetas reproducibles con código QR en R, para reducir errores en la colecta de datos.</p>
+          <div class="project-tags">
+            <span class="project-tag">R</span>
+            <span class="project-tag">Trazabilidad</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyecto-2.html" class="project-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQ_MvY1S5aaMLWVg-GLsI9CGXiP5nsegErWeCB-cBV47dl4bdmAjFXk8&s=10" alt="tocapu">
+        <div class="project-card-content">
+          <h3>tocapu 🔶</h3>
+          <p>App en R para diseñar etiquetas reproducibles con QR sin código, a partir del paquete Huito.</p>
+          <div class="project-tags">
+            <span class="project-tag">R / Shiny</span>
+            <span class="project-tag">Etiquetado</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="proyecto-3.html" class="project-card">
+        <img src="https://inkaverse.com/img/inkaverse.png" alt="inti - inkaverse">
+        <div class="project-card-content">
+          <h3>inti (inkaverse)</h3>
+          <p>Paquete de R para diseño experimental, colecta de datos (Tarpuy) y análisis estadístico (Yupana).</p>
+          <div class="project-tags">
+            <span class="project-tag">R / Shiny</span>
+            <span class="project-tag">CRAN</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>Powered by Hugo | Theme -  LoveIt</p>
+    <p>&copy; 2026&ndash;<i class="fa-solid fa-infinity"></i> | Victor Hugo | Agronomist <3 </p>
+    </div>
+  </footer>
+</body>
+</html>
